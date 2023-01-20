@@ -6,7 +6,7 @@
 /*   By: fgonzale <fgonzale@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 00:17:38 by fgonzale          #+#    #+#             */
-/*   Updated: 2022/12/21 03:47:12 by fgonzale         ###   ########.fr       */
+/*   Updated: 2023/01/20 17:56:08 by fgonzale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,6 @@ int	ft_printf(const char *str, ...)
 			print_len += ft_putchar(str[i]);
 		i++;
 	}
+	va_end(list);
 	return (print_len);
 }
